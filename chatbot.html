@@ -4,18 +4,37 @@
     <title>Chatbot</title>
   </head>
   <body>
-    <div class="js-container"></div>
-    <div class="js-container2"></div>
-
+    <div id="root"></div>
+    <link rel="stylesheet" href="./chatbot.css" />
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
-
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script src="https://unpkg.com/supersimpledev@8.6.4/dayjs.js"></script>
     <script type="text/babel">
-      let now = <p>Current time: {dayjs().format("HH:mm:ss")}</p>;
+      function App() {
+        return (
+          <>
+            <input placeholder="Send a message to Chatbot" size="30"></input>
+            <button>Send</button>
+            <ChatMessage message="hello chatbot" sender="user" />
+            <ChatMessage message="hello how can i help you?" sender="robot" />
+            <ChatMessage message="what the day today?" sender="user" />
+            <ChatMessage message="it's 1941 August 1" sender="robot" />
+          </>
+        );
+      }
+      function ChatMessage({ sender, message }) {
+        return (
+          <div>
+            {sender === "robot" && <img src="./images/robot.png" width="50" />}
+            <span>{message}</span>
+            {sender === "user" && <img src="./images/user.png" width="50" />}
+          </div>
+        );
+      }
+      const container = document.getElementById("root");
       const root = ReactDOM.createRoot(container);
-      root.render(now);
+      root.render(<App />);
     </script>
   </body>
 </html>
