@@ -1,0 +1,111 @@
+html,
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+.js-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chatbot-container.chatbot-container-top {
+  height: calc(100vh - 80px);
+  margin-top: 20px;
+}
+.chatbot-container-bottom {
+  justify-content: space-between;
+}
+.chatbot-container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  margin-right: 0;
+  margin-left: 0;
+}
+.chat-messages-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 0 1 auto;
+}
+.chat-messages-container::-webkit-scrollbar {
+  display: none;
+}
+.chat-messages-container > div {
+  flex-basis: 100%;
+}
+.chat-input-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+}
+.avatar {
+  width: 45px;
+  height: 45px;
+}
+.chat-message-user {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.chat-message-robot {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.message {
+  background-color: rgb(238, 238, 238);
+  max-width: 300px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.send-button {
+  background-color: rgb(25, 135, 84);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.chat-input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  border-width: 1px;
+}
+.position-switcher-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99999;
+}
+.position-switcher {
+  color: rgb(25, 135, 84);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.welcome-message {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: rgba(120, 120, 120);
+}
+.download-gif {
+  height: 40px;
+  margin: -15px;
+}
