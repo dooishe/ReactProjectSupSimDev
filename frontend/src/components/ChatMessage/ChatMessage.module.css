@@ -1,0 +1,28 @@
+/*ChatMessage.module.css*/
+.avatar {
+  width: 45px;
+  height: 45px;
+}
+.message {
+  background-color: rgb(238, 238, 238);
+  max-width: 300px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.chatMessageUser {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chatMessageRobot {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}

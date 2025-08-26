@@ -1,0 +1,18 @@
+/*ChatMessages.module.css*/
+.chatMessagesContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 0 1 auto;
+}
+
+.chatMessagesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.chatMessagesContainer > div {
+  flex-basis: 100%;
+}

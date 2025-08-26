@@ -1,0 +1,47 @@
+/* App.module.css */
+.jsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatbotContainer {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.chatbotContainerTop {
+  height: calc(100vh - 80px);
+  margin-top: 20px;
+}
+
+.chatbotContainerBottom {
+  justify-content: space-between;
+}
+
+.positionSwitcherContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99999;
+}
+
+.positionSwitcher {
+  color: rgb(25, 135, 84);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.welcomeMessage {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: rgba(120, 120, 120);
+}

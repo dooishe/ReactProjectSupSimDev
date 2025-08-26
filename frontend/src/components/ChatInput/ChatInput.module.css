@@ -1,0 +1,27 @@
+/*ChatInput.module.css*/
+.chatInputContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+}
+
+.downloadGif {
+  height: 40px;
+  margin: -15px;
+}
+.sendButton {
+  background-color: rgb(25, 135, 84);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.chatInput {
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  border-width: 1px;
+}
