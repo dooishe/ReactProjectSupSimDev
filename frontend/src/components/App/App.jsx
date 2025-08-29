@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Chatbot } from "supersimpledev";
 import ChatInput from "../ChatInput/ChatInput";
 import ChatMessages from "../ChatMessages/ChatMessages";
 import styles from "./App.module.css";
 function App() {
   const [chatMessages, setChatMessages] = useState([]);
   const [chatInputPosition, setChatInputPosition] = useState("top");
+  useEffect(() => {
+    Chatbot.addResponses({
+      "помоги мне": "пошел нахуй",
+      мне: "формулируй вопрос четче даун",
+    });
+  });
   function changeChatInputPosition(event) {
     const swithcerText = event.target.innerText;
     if (swithcerText === "Move textbox to bottom") {
